@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Reading In Bathtub
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Reading In Bathtub",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/b9/8f/b6/b98fb6b33b24c270f89d7eb2db71efc6.jpg&quot;,&quot;https://i.pinimg.com/originals/fb/ce/54/fbce54b4ce659912ba3fe26688bf35cf.jpg&quot;,&quot;https://i.pinimg.com/originals/03/05/0f/03050f428cf4d97ed6da6598f37a3375.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bathtub Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=reading in bathtub",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Reading In Bathtub
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Reading In Bathtub</strong>. And throw some cheetos in a separate plastic bag because you never know when you ll need a snack. Reading in my bathtub.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/2e/bc/9b/2ebc9b5af79e8506223740ee81a5f828.jpg" alt="What We All Wish We Were Doing Today Reading Bubblebath Wine Aesthetic Bathtub Relaxation Relaxing Treat Long Wavy Hair Hair Styles Long Hair Styles" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9K0IDro0-GQPELWQjeTNF4JmLmgsIM_0MRw';">
+        <figcaption>What We All Wish We Were Doing Today Reading Bubblebath Wine Aesthetic Bathtub Relaxation Relaxing Treat Long Wavy Hair Hair Styles Long Hair Styles from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Reading to your kiddos doesn t have to wait until bedtime. Reading and bathing on their own are some of the best ways to relax and when you combine the two you can feel your stress just melt away. You come home after a long day at work pour yourself a glass of wine and soak your stresses away in a bathtub fizzing away with intoxicating bath bombs.
+    </p>
+    <h3>Please subscribe to my channel.</h3>
+    <p>6 memorize the book you want to read before you get into the tub then storytime yourself as you soak your troubles away. Book reviews from the comfort of the bubbles. 6 memorize the book you want to read before you get into the tub then storytime yourself as you soak your troubles away. Gwyneth paltrow snaps a photo of brad falchuk and his dog doing some morning reading.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="A Great Place To Read Pin If You Like It Reading Books Sweet Home Bathtub Caddy My Dream Home" src="https://i.pinimg.com/originals/d1/24/0a/d1240a42418ab9b932825efd5e07ae24.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOqhiRdpKJ14U104JZzwKbpB3JFArUiVadVQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Reading in my bathtub.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Reading Light For The Bathtub Of Course Badkamer Badkamerideeen Badkamer Modern" src="https://i.pinimg.com/originals/12/a8/42/12a842be0f66c7330fd712b270cfb135.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGb4YMSdtWg1x6-6l88Lo1tryw2za8ywyBHA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Of course bringing books into the bathtub comes with a.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/originals/4a/24/ce/4a24ce077cf0ac2cadd2c7e6c369a242.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwXu8ZZLGdPFGbAhBAf3NipmOQ23pLAEVBQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>5 don t read an ebook.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On B A T H T I M E" src="https://i.pinimg.com/originals/df/e9/f0/dfe9f03481a6b68f720199020980ccc6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsKA52aH7FyWeqbO-ZWGfJSlEQTxyytRB2IA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Reading to your kiddos doesn t have to wait until bedtime.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="This Is My Reading Tub At School It S Beautiful Classroom Centers Classroom Decor Classroom Library" src="https://i.pinimg.com/originals/d6/69/02/d66902018138b3400eae23a98483390f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkJ7_GGki4PhPrw56BVS3FsMhDTxtm8Iu5eg';" />
+        <small>Source: tr.pinterest.com</small>
+        <p>8 minutes reading time.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="A Baby Reading In A Bathtub Pin If You Like It Reading Books Kids Reading Baby Reading Paranormal Books" src="https://i.pinimg.com/originals/b2/b9/8f/b2b98f77cdb179c3958b6e0bb2c93ffc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-gH73xad316RPKktXs3lVfPjLu5lVpkaNQ';" />
+        <small>Source: nl.pinterest.com</small>
+        <p>You come home after a long day at work pour yourself a glass of wine and soak your stresses away in a bathtub fizzing away with intoxicating bath bombs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Reading In The Tub Is Imagens De Leitura Ilustracao Desenho" src="https://i.pinimg.com/originals/9e/3f/08/9e3f08b13e156df4cb9b6fa5269d91a3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjJAH86hEJBUgiRVmsd52x-Onzpmev_FCtQ';" />
+        <small>Source: pt.pinterest.com</small>
+        <p>Reading to your kiddos doesn t have to wait until bedtime.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Livio69 Bath Photography White Photography Black And White Photography" src="https://i.pinimg.com/originals/6e/d6/03/6ed603aa62b3cef975f88aa873fc5caf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu4g-147UeVUW6lOnf_6Bc_dfBoijK4eDc2Q';" />
+        <small>Source: id.pinterest.com</small>
+        <p>Circe by madeline miller.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Read In The Bathtub Day" src="https://i.pinimg.com/originals/5b/78/7a/5b787a698d306f035c22e5cf17d6b9ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZuh51TQ9qSrKQ6KoBz8nM3k5dyEzWG9Vn-w';" />
+        <small>Source: www.pinterest.com</small>
+        <p>5 don t read an ebook.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/best-bathtub-toys.html"><i>&larr; best bathtub toys</i></a>
+                                                                    
+                                        <a href="/bette-bathtubs.html"><i>bette bathtubs &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

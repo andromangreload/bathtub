@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Triangle Bathtub
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Triangle Bathtub",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/8d/c6/1a/8dc61a4c61734a671385d15281ea65df.jpg&quot;,&quot;https://i.pinimg.com/originals/67/1a/be/671abe239039eea230739f6483a7a075.jpg&quot;,&quot;https://i.pinimg.com/originals/d5/f7/1c/d5f71ce092f28594a115416a69c15b78.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bathtub Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=triangle bathtub",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Triangle Bathtub
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Triangle Bathtub</strong>. The bathing area can be an oval with a seat cloverleaf in shape or also be a triangle. The top countries of suppliers are india china from which the percentage of triangle bath tub supply is.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/43/47/e7/4347e72596e9864cb03242ef1ea0e5ba.jpg" alt="Contemporary Style Freestanding Triangular Bathtub Purescape 400 By Aquatica Plumbing Group Acrylic Bathtub Free Standing Bath Tub Bathtub" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9ARaEzAhe9QZJj7kunrKFi7vfQmDuOaUFA';">
+        <figcaption>Contemporary Style Freestanding Triangular Bathtub Purescape 400 By Aquatica Plumbing Group Acrylic Bathtub Free Standing Bath Tub Bathtub from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Italian made velvet french jacquard signature neoprene. An update on covid 19 our priority now as it always has been is the safety of our customer and employees. Triangle shaped whirlpool bathtub with tv q319 including.
+    </p>
+    <h3>Most people prefer a shower to a bath.</h3>
+    <p>1 faucet set drain pillow 2 with massage 1p motor 6 pcs big jets 4 pcs small jets size 1500 1500 715mm material. A wide variety of triangle bathtub options are available to you such as graphic design others and total solution for projects. For instance the neptune ariane pictured above has been a popular bathtub through the years. Easier and safer to enter and exit a walk in shower has more space and can be designed with accessories to make your showering experience more personal.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contemporary Style Freestanding Triangular Bathtub Purescape 400 By Aquatica Plumbing Group Acrylic Bathtub Free Standing Bath Tub Bathtub" src="https://i.pinimg.com/originals/43/47/e7/4347e72596e9864cb03242ef1ea0e5ba.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9ARaEzAhe9QZJj7kunrKFi7vfQmDuOaUFA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The bathing area can be an oval with a seat cloverleaf in shape or also be a triangle.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Impressive Types Of Bathtubs Triangle Re Bath Replacement Bathtubs Bathtub Installations Re Is One Of The Pictures Bath Tub For Two Jacuzzi Bathtub Bathtub" src="https://i.pinimg.com/originals/d5/f7/1c/d5f71ce092f28594a115416a69c15b78.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlqFyeJ0imDDyXFU4Y5S8hRas81lKPYPvvjg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>A bathtub to shower conversion replacing a bathtub with a walk in shower is the most popular bathroom remodeling option for many reasons.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Bathtub" src="https://i.pinimg.com/originals/44/0c/1d/440c1d2ba81cc9b03abd70e16d8b4f0e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVqcdpt8KaH2Y-JJFV2HLzJjOSblSyvseCJA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Most people prefer a shower to a bath.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Image Result For Tile Around Corner Garden Tub Pictures Tile Around Bathtub Tub Tile Corner Tub" src="https://i.pinimg.com/originals/51/be/f3/51bef336893492082cf7400ee99c32ec.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5TxOc5z3OLMsLz0LyWlNwKGuFRDOZSX48fw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>You can also choose from center reversible and left triangle bathtub as well as from massage soaking triangle bathtub and whether triangle bathtub is 2 years 1 year or 5 years.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="By Sea Acrylic Bubble Bath Whirlpool Massage Bathtub Tubs Bath Tub No B206 Massage Bathtub 1 889 00 Bathtub Bathtub Design Bathtub Sizes" src="https://i.pinimg.com/originals/cc/75/26/cc752699445366d99b6919ae3be07cb5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREswO3srghaT4xmjBZbmJu0neF7JD_e1vjuQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Browse 51 triangle bathtub on houzz whether you want inspiration for planning triangle bathtub or are building designer triangle bathtub from scratch houzz has 51 pictures from the best designers decorators and architects in the country including rain city exteriors and coates design architects seattle.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Bathrooms" src="https://i.pinimg.com/originals/16/58/f4/1658f4e105426310c7a75b6f2dd10e89.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnw70IL9k24EEs9aDGbzP_wp2eL8YrV32YjQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The bathing area can be an oval with a seat cloverleaf in shape or also be a triangle.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Triangle Bathtub Double Bathtub Master Bathroom Layout Bathtub Remodel" src="https://i.pinimg.com/originals/db/94/4f/db944f2848330a16029e48a935baa4a4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIstOUHltDJuuEUSai816dHm1rRWXqDxOChw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Corner bathtubs have become very popular for master baths since they can provide room for two bathers in a compact area.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="No B290 Two Person Couple Use Corner 1 5 M Triangle Bathtub Sitting Bathtub Whirlpool And Bubble Spa 1 790 00 Bubble Spa Sitting Bathtub Bathtub" src="https://i.pinimg.com/originals/8d/c6/1a/8dc61a4c61734a671385d15281ea65df.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkiEoqsgbpB7XDq-vGjJrgI-B50SCw4s4dHg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>This 60 triangle bathtub has two.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Triangle Seat In Shower Cool Corner Tub Shower Corner Tub Shower Tub" src="https://i.pinimg.com/474x/35/f7/0e/35f70e7aee44748df14f2d6335904efc--bathroom-remodeling-remodeling-ideas.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BbspJ65hAijWkmpbnLnOkGw0QjgjR7RJiw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>For instance the neptune ariane pictured above has been a popular bathtub through the years.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/large-bathtubs.html"><i>&larr; large bathtubs</i></a>
+                                                                    
+                                        <a href="/kohler-devonshire-bathtub.html"><i>kohler devonshire bathtub &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

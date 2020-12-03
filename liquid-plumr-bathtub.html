@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Liquid Plumr Bathtub
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Liquid Plumr Bathtub",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/600x315/86/27/2f/86272fb774e60c831031d650ab10b076.jpg&quot;,&quot;https://i.pinimg.com/originals/8d/ab/d6/8dabd695fbdc68efbbf9d49901be5c79.jpg&quot;,&quot;https://i.pinimg.com/originals/05/58/fd/0558fd59dd4bfd8c14d73a3552e95e13.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bathtub Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=liquid plumr bathtub",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Liquid Plumr Bathtub
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Liquid Plumr Bathtub</strong>. Then use a drain stick to pull out the clog. Liquid plumr made tub worse.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/f0/b0/5e/f0b05e31be32d2973a4e4cbff830c436.jpg" alt="Liquid Plumr Pro Strength Full Clog Destroyer Plus Pipeguard 80 Fl Oz In 2020 Drain Cleaner Paraben Free Products Unclog Drain" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKLhcLErWp3q-XYjKLNxVE_vXvfWmp18mA8Q';">
+        <figcaption>Liquid Plumr Pro Strength Full Clog Destroyer Plus Pipeguard 80 Fl Oz In 2020 Drain Cleaner Paraben Free Products Unclog Drain from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Our powerful gel destroys hair clogs the first time with 70 more actives. Then use a drain stick to pull out the clog. I had a slow drain in the tub nothing crazy but i wanted to get ahead of it since i lose a lot of hair when showering and had luck with drano in the past in other apartments.
+    </p>
+    <h3>Hair clog eliminator effectively unclogs your bathtub shower bathroom sink and kitchen sink and clears slow running drains.</h3>
+    <p>The drano line of products offers a similar product max gel clog removal which the company claims is over 50 percent thicker than liquid plumr gel thus making it more effective. Feed the hanger through the drain and poke through the hair you may be able to bring some hair up. To unclog a bathtub drain and get hair out of your drain start by removing and cleaning the drain stopper and strainer. Our powerful gel destroys hair clogs the first time with 70 more actives.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Liquid Plumr Full Clog Destroyer For Clogged Sinks Bathtub Drain Vinegar Cleaning Baking Soda Vinegar Cleaning" src="https://i.pinimg.com/originals/c3/71/b8/c371b8cbebe0407fff8f8c7a8d1bb1cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTssWvTD2BNJB8Fv1Fq8VWq6zoZ9n7kDQWFQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>I had a slow drain in the tub nothing crazy but i wanted to get ahead of it since i lose a lot of hair when showering and had luck with drano in the past in other apartments.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On House Ideas" src="https://i.pinimg.com/originals/e1/95/03/e19503da4af130a2ec18f5fc66242b12.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREosn8UQujp6MtYYp3wvEmZqbr0-qmeF2NSA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Liquid plumr gel clog remover was created to cut through standing water and eliminate drain clogs that may be the cause of standing water.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="You Should Probably Own Stock In Liquid Plumr Thick Hair Styles Hair Girl" src="https://i.pinimg.com/600x315/86/27/2f/86272fb774e60c831031d650ab10b076.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWmC6_hiMkzlDuMQAOQtUuhxpTXrZ3V2epmw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Use liquid plumr clog destroyer plus pipeguard or liquid plumr hair clog eliminator to dissolve the remaining clog causing gunk.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="We All Have Hair That Doesn T Mean We Have To Live With It In Our Drains Follow These Steps To Unclog Even The Hairiest Of Bathtub Drain Unclog Drain Unclog" src="https://i.pinimg.com/originals/e1/b2/58/e1b2584c1055d836c15b5d503b62359d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkLpgFirKeXvdo3RbT7sHmIMkOlJJFyMOgJw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Then use a drain stick to pull out the clog.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How Baking Soda Amp Vinegar Clean Drains Liquid Plumr Vinegar Cleaning Bathtub Drain Baking Soda Vinegar Cleaning" src="https://i.pinimg.com/originals/c2/bf/58/c2bf58eb6c9706e28bcfb6fe5f1cb3a5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgaPIU_xTh62G4xqDNtdDJtWzGrpNsFkKM_w';" />
+        <small>Source: br.pinterest.com</small>
+        <p>Liquid plumr gel clog remover was created to cut through standing water and eliminate drain clogs that may be the cause of standing water.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Treos Free Standing Cast Mineral Tub 1 Mineral Bath Tub By Treos Modern Free Standing Tub Free Standing Bath Tub Bathtub Walls Big Baths" src="https://i.pinimg.com/originals/d7/bf/41/d7bf4159638ca3a684e39efebe81013a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmG84pO0v09wcTUmWqPIC0Zt5_gJ4m37puw';" />
+        <small>Source: ar.pinterest.com</small>
+        <p>Our powerful gel destroys hair clogs the first time with 70 more actives.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Liquid Plumr Pro Strength Full Clog Destroyer Plus Pipeguard 80 Fl Oz Drain Repair Bathtub Drain Drain" src="https://i.pinimg.com/originals/30/45/d0/3045d074eae0d6a3bfd54352cb9500bd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-xgPf1jzp0yymVw0NcmCbYT-nlTnPkNrpg';" />
+        <small>Source: in.pinterest.com</small>
+        <p>Sometimes you will need the entire bottle to unclog a bathtub drain.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Love The Fall Color" src="https://i.pinimg.com/originals/1d/bf/89/1dbf89a41a7e94d83bae413964b7bd7d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBahAnmC9MjQTZ87m069KdbOJVqMbtLuL0qA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>You may have to use a wire hanger and feed through the drain and try to help the liquid plumber work.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lush Bath Art In 2020 Bathtub Decor Bath Lush Bath" src="https://i.pinimg.com/originals/b6/33/0b/b6330bc269b97b4e09c5fc0186c943fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJ4qafq_lG8nUyXRZHGyCxX1RKv6i-Fl8Tg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The drano line of products offers a similar product max gel clog removal which the company claims is over 50 percent thicker than liquid plumr gel thus making it more effective.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/bathtub-drain-gasket.html"><i>&larr; bathtub drain gasket</i></a>
+                                                                    
+                                        <a href="/bathtub-drain-parts.html"><i>bathtub drain parts &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

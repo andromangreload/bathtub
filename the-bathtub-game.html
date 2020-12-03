@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        The Bathtub Game
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "The Bathtub Game",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/8c/76/40/8c76401a69f1f7f50885f7d19d449b48.jpg&quot;,&quot;https://i.pinimg.com/originals/88/1b/fd/881bfd99aa7191d62082d3b091a0fd82.jpg&quot;,&quot;https://i.pinimg.com/originals/56/7c/1a/567c1a923647d64ff1ac375b040bc544.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bathtub Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=the bathtub game",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            The Bathtub Game
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>The Bathtub Game</strong>. The bathtub though won t be found what. 1 things that you will need 2 starting the game 3 what the woman looks like 4 playing the game 5 ending the game 6 rules a bathroom with a bathtub.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/e2/5d/83/e25d833157c0c82ef8778fb42a5e676b.jpg" alt="Pin By Usagi San On Creepypasta Stories Bathroom Appliances Bathtub Paint Remover" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfAWBps8__AfkeqfeGpVq0kj5YWW3WBzVnw';">
+        <figcaption>Pin By Usagi San On Creepypasta Stories Bathroom Appliances Bathtub Paint Remover from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Playing daruma san can result in bad things happening to you even death. A real estate listing of a 3 161 square foot house in kentucky has piqued the interest of internet sleuths and online gamers alike thanks to its 3d virtual walk through feature that allowed users. The bath game formerly known as daruma san is an old game summoning a ghost from a bathtub that follows you all day.
+    </p>
+    <h3>The bathtub though won t be found what.</h3>
+    <p>Locating a bathtub a basic fixture has become the subject of a new online game all made possible by a tweet that went viral this week. But it s also brought questions around demand and climate into sharper focus. Playing daruma san can result in bad things happening to you even death. The walkthrough quickly became a game as twitter users posted screengrabs challenging others to find certain items or rooms in the house.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bathtub Sub Game Logo Typography Logo Game Design" src="https://i.pinimg.com/originals/8a/a4/50/8aa4508eed18e5c6e335d6a954eb7e1b.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDxtssiT92S0sbtIfqW6g2sI7bojU2_hxtjw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Fill the bathtub with water and turn off the lights.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Redecor Nadroy In 2020 Redecorating Rustic Design Polished Concrete" src="https://i.pinimg.com/originals/2b/f2/4f/2bf24fae90b97449bd98b03dce92fdb9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzApMMUZpPL7fyn2BPAPMS_ba2SJpKgdJPCw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Sit in the middle of the bathtub facing the faucets or taps.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Witcher 3 Wild Hunt Part 1 That Bathtub Scene Tho Witcher 3 Wild Hunt Wild Hunt The Witcher 3" src="https://i.pinimg.com/originals/88/1b/fd/881bfd99aa7191d62082d3b091a0fd82.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXIyDGJ2WiMKJJy-Lyq1boByRg4Z9nwgKT3w';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Woodside plays the long game from the bathtub the covid 19 crisis has hit energy companies hard.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By Usagi San On Creepypasta Stories Bathroom Appliances Bathtub Paint Remover" src="https://i.pinimg.com/originals/e2/5d/83/e25d833157c0c82ef8778fb42a5e676b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfAWBps8__AfkeqfeGpVq0kj5YWW3WBzVnw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The walkthrough quickly became a game as twitter users posted screengrabs challenging others to find certain items or rooms in the house.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="743 Likes 63 Comments Precious Tumisho Thamaga Precioustheplanner On Instagram Checked In After Relaxing Pre Birthda Game Lodge Lodge Spa Treatments" src="https://i.pinimg.com/originals/f6/ac/89/f6ac89fcfba21def5d2322b502cfe886.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdONJhaEREtWXGyqkxvoksXGzfS0VVI_xKgw';" />
+        <small>Source: fi.pinterest.com</small>
+        <p>Before you go to bed take off all of your clothes.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Glowsticks In The Bathtub Bath Time Fun Lesson Plans For Toddlers" src="https://i.pinimg.com/originals/d1/52/7f/d1527ff58d060a3906fb69587bad7469.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy9JGLpAXENu-iDkEtprll8Z9n3DUuFTJ2bw';" />
+        <small>Source: es.pinterest.com</small>
+        <p>Before you go to bed at night take off your clothes and go into the bathroom.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="" src="https://i.pinimg.com/564x/36/c6/ee/36c6ee355f4de192ad236a3846a717e6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ZfKh-p3YlIIU08AitXYMCG28NoIyp-FcBA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Fill the bathtub with water and turn off the lights.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Oleh Ria Catur Di Game Sanaeha Neung Dao Fah Deaw Leh Ban Pa Karn Di 2020" src="https://i.pinimg.com/originals/8c/76/40/8c76401a69f1f7f50885f7d19d449b48.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVsNrqc2xzOAoY3rPy3zzCpGmORVITiuQpRw';" />
+        <small>Source: id.pinterest.com</small>
+        <p>The bath game formerly known as daruma san is an old game summoning a ghost from a bathtub that follows you all day.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Game Environments" src="https://i.pinimg.com/originals/2d/20/30/2d2030d6a63fd168536f4f986b1cfb1b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5WBcX2ivn4koTg4VQeAsQSpMepKGCrFgcbg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Locating a bathtub a basic fixture has become the subject of a new online game all made possible by a tweet that went viral this week.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/bathtub-heater-portable.html"><i>&larr; bathtub heater portable</i></a>
+                                                                    
+                                        <a href="/bathtub-in-bathroom.html"><i>bathtub in bathroom &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

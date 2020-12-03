@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Leaky Bathtub Faucet
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Leaky Bathtub Faucet",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/28/55/50/2855509f3a4afc48baf2a92c03f687ef.jpg&quot;,&quot;https://i.pinimg.com/564x/98/e8/48/98e8486409a4798f76b7cbc7603660d6.jpg&quot;,&quot;https://i.pinimg.com/originals/cb/e1/a0/cbe1a0889e7d546fcdda03d771621935.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bathtub Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=leaky bathtub faucet",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Leaky Bathtub Faucet
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Leaky Bathtub Faucet</strong>. This is an easy to follow in depth step by step instructional tutorial on how to fix the leak quick and easy buy. Hiring a plumber can be a costly and time consuming task but repairing the leak yourself is generally an easy fix.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/7f/04/27/7f0427bf8464a65d88967ff682bc7cb2.jpg" alt="How To Fix A Leaky Bathtub Faucet Delta Shower Cartridge L How To Replace A Bathtub Faucet Cartridge Replace Bathtub Faucet Shower Faucet Repair Bathtub Faucet" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCj2C7pyueWU-yj-iYtM0V-BHAzSZYBUCJLIAX9BwLzPa4eNoA_E8Qcx10rZVsaqpd0CNuZWSOyZ8BkPi0CagftRWVqYxdYpw&amp;ec=45732301';">
+        <figcaption>How To Fix A Leaky Bathtub Faucet Delta Shower Cartridge L How To Replace A Bathtub Faucet Cartridge Replace Bathtub Faucet Shower Faucet Repair Bathtub Faucet from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Although a plumber is needed to fix major problems you can repair. Watch how to figure out the problem and repair a double handle faucet. Are you annoyed with a leaky bathtub faucet.
+    </p>
+    <h3>Hiring a plumber can be a costly and time consuming task but repairing the leak yourself is generally an easy fix.</h3>
+    <p>If your valve is highly corroded or the finish is wearing off replace the entire faucet. The most common reason for a leaky faucet is an old washer that needs to be replaced. Watch how to figure out the problem and repair a double handle faucet. Dripping bathtub faucets can increase your water bill every month.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Fix A Leaking Bathtub Faucet Bathtub Faucet Faucet Faucet Repair" src="https://i.pinimg.com/736x/c9/03/ad/c903ad8a4933fbf195d362f1a3caa985.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQda5jvdbAzrfocsVQ9Er9f2z2-m9Lk8PtY_pMBwFsvgoDsF4xmuzn4K2jSIDfb-_sUOBtPTdQfE2NHo-h9KFbZEBJrPIwayqo&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The leaky taps can cost you a lot of money in the form of extra water bill charges and the continuous dripping water will also leave an ugly stain on the bathtub.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bathroom Faucet Leaking From Spout How To Fix A Leaky Bathtub Faucet Removing The Spout From A Leaky Ba In 2020 Bathtub Faucet Bathroom Faucets Replace Bathtub Faucet" src="https://i.pinimg.com/564x/1c/f1/d7/1cf1d776196e9f59edb27081c03d27dc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHOPgHFq8TOtqdd2Mcju-9Dr7xgYn3nIk9VMth-tszBO2CicGqif1OsTXWvZMRKaZh-PlDQBF31Ykk9h3LFixOhMfCjS2ppJA&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Here are the steps for how to do it and these steps apply to most kinds of bathtub including walk in bathtubs corner bathtubs and so on.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Fix A Leaking Bathtub Faucet Faucet Repair Faucet Leaky Faucet" src="https://i.pinimg.com/564x/98/e8/48/98e8486409a4798f76b7cbc7603660d6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcmGq6uJw8_Q2y1TkrHFpFaQZ2udBrnTvgojnQSCCNXc6aPqZMjYFXnPhM5k9aHpMiL9M7eas_fWmSPUNaZwc_IeLqhP4Q1ng&amp;ec=45732301';" />
+        <small>Source: br.pinterest.com</small>
+        <p>Watch how to figure out the problem and repair a double handle faucet.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Plumbing Installation" src="https://i.pinimg.com/474x/bd/1c/17/bd1c1736afdc3f93cf75b2e8aa3d9e78.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR52AcgT6l-FR6TWYlQ6m0El1En_YSL8Ov3P66dW1q7Rpiv-cNNaraHhHBXGA0EKs84ltqxCRNC5aUwb5wt3UibkwYmlO8Zi5c&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Hiring a plumber can be a costly and time consuming task but repairing the leak yourself is generally an easy fix.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Faucet Fix Leaky Bathtub Faucet Handle Fix Repair Repair Leaking Kitchen Faucet Faucet Fix Leaky Bathtub Faucet Handle Fix Repair Repair Leaking Kitchen Faucet" src="https://i.pinimg.com/originals/28/55/50/2855509f3a4afc48baf2a92c03f687ef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4eux_AmOo_N14jH2CrcFbVxTKaozemswnqjkfOF8FOPKBLBJH0nCKpkxZ6qPiZhvBPvkG0mW-ml7bQcdOcyUOXLpe3Pvj1UM&amp;ec=45732301';" />
+        <small>Source: id.pinterest.com</small>
+        <p>Diy bathtub faucet repair fixing a leaking dripping faucet yourself without paying a plumber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Fix A Leaky Bathtub Faucet With Pictures Wikihow Leakybathroomfaucetyoutube Bathroom Faucets In 2019 Shower Faucet Repair Bathroom Faucets Bathtub" src="https://i.pinimg.com/736x/aa/72/08/aa7208783ae785ab29b004c34de0f370.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTddVFmDxLtiGTEqTRSKGnclMn8ZlxIT0ZLtQEfVmNt8VgjDQQuwDp5KwoGGzRfYAtB7KjJfLsxqYWkpwjvg2beLEBHSHJQTzI&amp;ec=45732301';" />
+        <small>Source: in.pinterest.com</small>
+        <p>The leaky taps can cost you a lot of money in the form of extra water bill charges and the continuous dripping water will also leave an ugly stain on the bathtub.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Fix A Leaking Bathtub Faucet Bathtub Faucet Leaky Faucet Bathroom Fix Leaky Faucet" src="https://i.pinimg.com/originals/29/8c/8b/298c8ba5b3e480696a2498db164a8741.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCInMOxc3sFG2er5sOtutuLwusC3zOy5WY5976gerncpiwLQsdxUYwAdWPTMpyrlaF5gH11jVKrmLgQRp8_XRx3A_yY6DW4M&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>This is an easy to follow in depth step by step instructional tutorial on how to fix the leak quick and easy buy.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Fix A Leaking Bathtub Faucet Bathtub Faucet Faucet Repair Replace Bathtub Faucet" src="https://i.pinimg.com/originals/da/39/3c/da393c81a4f9a84559b9c0253c324527.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVPcJpuBuGNQt8UFt_6lwjA-yvmyXk9JLyiOmKShdiEFs-i695LSMDj0x5NhxU6uthNeLuJnKZsayKRhoCDnTZZgTE973-7Y&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Although a plumber is needed to fix major problems you can repair.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Fix A Leaking Bathtub Faucet Faucet Repair Bathtub Faucet Tub Faucet" src="https://i.pinimg.com/originals/ca/61/d3/ca61d3ee8d354ed8e297155797a12ce7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTugwmm9-k-5oey2S4rbbQhj9R8QnbmQSkHpch3Cn_4gSI9d143UuutFcV0mH_fiPJUbZbKXeaE8NcRF-KSAA4sxBaGJ8-1ek&amp;ec=45732301';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Dripping leaky faucet driving you nuts.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/american-standard-whirlpool-bathtub.html"><i>&larr; american standard whirlpool bathtub</i></a>
+                                                                    
+                                        <a href="/babies-bathtub.html"><i>babies bathtub &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

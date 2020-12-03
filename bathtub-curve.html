@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Bathtub Curve
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Bathtub Curve",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/a5/f0/df/a5f0df94841db7d699813a7e0d860f30.png&quot;,&quot;https://i.pinimg.com/originals/2e/52/45/2e5245d036fdb84547a502c6e829ba37.gif&quot;,&quot;https://i.pinimg.com/originals/c9/c9/6f/c9c96fa054526bc17f00cf979bebe0ed.png&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bathtub Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bathtub curve",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Bathtub Curve
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Bathtub Curve</strong>. If enough units from a given population are observed operating and failing over time it is relatively easy to compute week by week or month by month estimates of the failure rate h t. This is the well known bathtub curve which over the years has become widely accepted by the reliability community.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/8e/b1/70/8eb170fd429f4c4fca1b53082bcf0828.png" alt="Apply This Bath Tub Curve To Decide When Is The Right Time To Move In Your Career Whether That Is A New Role Or Mo How To Apply Career Reliability Engineering" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKUQV4VmPwD7KP7KSyRVkRdB2nUo7aCJ9Qg';">
+        <figcaption>Apply This Bath Tub Curve To Decide When Is The Right Time To Move In Your Career Whether That Is A New Role Or Mo How To Apply Career Reliability Engineering from za.pinterest.com</figcaption>
+    </figure>
+        <p>
+        The third part is an increasing failure rate known as wear out failures. Some individual units will fail relatively early infant mortality. The first part is a decreasing failure rate known as early failures.
+    </p>
+    <h3>Figure 1 shows a typical time versus failure rate curve for equipment.</h3>
+    <p>Over a certain product lifetime the bathtub curve shows how many units might fail during any given phase of a three part timeline. The second part is a constant failure rate known as random failures. It allows us to clearly map three distinct phases in the asset s life cycle as you can see below. The bathtub curve named for its shape and shown in fig.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Tubs" src="https://i.pinimg.com/originals/a5/f0/df/a5f0df94841db7d699813a7e0d860f30.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3IYCwcHWiwVvXXDmkS3U-yoeRY7A74dFmfA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>15 11 is perhaps the most famous graphical representation in the field of reliability plotted is the failure rate h t versus time the resulting curve describes not only the behavior of engineering components but also the lifetimes of human populations.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bathtub Curve Curve Supply Chain Management Project Management" src="https://i.pinimg.com/originals/61/02/81/610281ce20d9eab57832df6597ba0b66.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx0lNZ7hS9BoKSwnOLKGGSD4LNLEkVQe0H0Q';" />
+        <small>Source: in.pinterest.com</small>
+        <p>The second part is a constant failure rate known as random failures.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Ideas" src="https://i.pinimg.com/originals/2e/52/45/2e5245d036fdb84547a502c6e829ba37.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7a6TdNGYY3FgTxCKAE87gWSror_rjO10zBQ';" />
+        <small>Source: nl.pinterest.com</small>
+        <p>An infant mortality period with a decreasing failure rate followed by a normal life period also known as useful life with a low relatively constant failure rate and concluding with a wear out period that exhibits an increasing failure rate.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Failure Rate Curve Template For Powerpoint Powerpoint Templates Powerpoint Bell Curve" src="https://i.pinimg.com/564x/2a/ff/11/2aff11457705f878c9ec8ed87d9a2a3c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqz4-V_vyTJF4AMC6t45dF0b8ZifyeOobEnQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>15 11 is perhaps the most famous graphical representation in the field of reliability plotted is the failure rate h t versus time the resulting curve describes not only the behavior of engineering components but also the lifetimes of human populations.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bathtub Curve Wikipedia The Free Encyclopedia" src="https://i.pinimg.com/originals/f3/47/57/f34757414a4a8a35753c3e142278991f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ9cum9hLb3wazmG45klmcwkVnp0bKz_eWCQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Over a certain product lifetime the bathtub curve shows how many units might fail during any given phase of a three part timeline.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ferdy 68 Acrylic Stand Alone Bathtub White Modern Free Https Www Amazon Com Dp B01mt8aopt Ref Cm Sw R P Free Standing Bath Tub Soaking Bathtubs Bathtub" src="https://i.pinimg.com/474x/6f/2a/84/6f2a84f7f9868288a00f53364bb2ca10.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToeNTOFbGZzFxh_nTAvTXnZrTSUDUJOUPhkw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>15 11 is perhaps the most famous graphical representation in the field of reliability plotted is the failure rate h t versus time the resulting curve describes not only the behavior of engineering components but also the lifetimes of human populations.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Drain In The Bathtub Curve No Mtbf Reliability Engineering Life Cycles Drain" src="https://i.pinimg.com/originals/c5/c9/c1/c5c9c1a51cd53dc229adc08f97783897.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPA3TfYGWhZmybXrwZZcqMRx6ZusYOmiiXg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Figure 1 shows a typical time versus failure rate curve for equipment.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ferdy 67 Freestanding Bathtub Curve Edge Soaking Bathtub Glossy White Cupc Certified Drain Overflow In 2020 Free Standing Bath Tub Soaking Bathtubs Glossy White" src="https://i.pinimg.com/originals/45/fd/16/45fd16d2a991340499765a5d6014eb1a.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvIcAZw8W-YFhnFL_M8eYqmyruXVYAn6uShA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Understanding these three stages enables you to adapt your maintenance plan throughout the lifecycle.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="American Standard Cadet Curved Acrylic Bath Tub Left Hand 1717lh 020 Home Depot Canada 309 00 American Standard Bathtubs Complete Bathrooms Bathtub" src="https://i.pinimg.com/originals/48/71/53/487153bdd214d326a2ba6ac4ffc93b29.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnVFgEuCM1bQeaJEu7AF2SM2h46SLShugSrw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The first downward portion of the curve is called an infant mortality phase and shows how.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/bathtub-in-a-shower.html"><i>&larr; bathtub in a shower</i></a>
+                                                                    
+                                        <a href="/bathtub-holder.html"><i>bathtub holder &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

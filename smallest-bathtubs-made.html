@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Smallest Bathtubs Made
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Smallest Bathtubs Made",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/28/ee/67/28ee679b3d0e6688c5ebec6979d49b42.jpg&quot;,&quot;https://i.pinimg.com/originals/d9/1e/87/d91e87fe73a5612860444c0811e26d73.jpg&quot;,&quot;https://i.pinimg.com/originals/ba/df/ac/badfac75990d589564bfa871bc405d18.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bathtub Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=smallest bathtubs made",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Smallest Bathtubs Made
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Smallest Bathtubs Made</strong>. Woodbridge bta 1513 acrylic freestanding bathtub contemporary soaking tub with brushed nickel overflow and drain bta1513 white 67 b 0013 4 4 out of 5 stars 189 645 10 645. One thing to watch out for with budget bathtubs made of acrylic however is the tendency of the finish to scratch.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/1f/79/2e/1f792ee0f29929f2bc4e5965b5b63b5c.jpg" alt="15 Mini Bathtub And Shower Combos For Small Bathrooms Digsdigs Bathtub Shower Combo Mini Bathtub Small Bathtub" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1JEB6H6klLOVcYZ6Z7NYV4y2lO8d1dI5Upmf2tmEaNKVmIfwk1auHV8b8poT1bsItQwJ6uLSqLTqVqvOJAc7OpRamcTMbDBo&amp;ec=45732304';">
+        <figcaption>15 Mini Bathtub And Shower Combos For Small Bathrooms Digsdigs Bathtub Shower Combo Mini Bathtub Small Bathtub from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        This corner configured bathtub is made even more impressive by its bright red hue. Woodbridge bta 1513 acrylic freestanding bathtub contemporary soaking tub with brushed nickel overflow and drain bta1513 white 67 b 0013 4 4 out of 5 stars 189 645 10 645. One thing to watch out for with budget bathtubs made of acrylic however is the tendency of the finish to scratch.
+    </p>
+    <h3>Although the tub is an ideal match for winter lodges and cabins the handsome design and chrome fixtures ensure it provides a classic look in any setting.</h3>
+    <p>Material is as important as the shape of a tub. These tiny tubs are here to save you from a lifetime of showers. 9 small bathtubs perfect for a relaxing soak. Small bathtubs made of metal asti copper japanese soaking tub.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Soaker Tubs Designed For Small Bathrooms Bathtubs For Small Bathrooms Small Bathroom Shower Tub" src="https://i.pinimg.com/originals/b3/2d/4c/b32d4cb216163d227e0cbb0b25726f7c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7KQoqyRQIGv7-7rYZEQ3tkbTMPsb902ELPcHoUifArtEMqYpnzz4rD36aA3_1EUmsyuV0g0ybOO-5aPNTLM6oE2KjErQz8Q&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The upside to acrylic tubs is that they re easy to clean and also weigh considerably less than cast iron versions.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="8 Soaker Tubs Designed For Small Bathrooms Bathtubs For Small Bathrooms Bathrooms Remodel Bathroom Design Small" src="https://i.pinimg.com/originals/89/70/e7/8970e75a08f48f5895d1406659a626de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5SQcL4wOZxCVVpRyPV56LjVbf_xyxGfgARk1MYPJfCtEFFIeHWB1si0F9S3_lZOCC-XJGPklXkWl7li6MJFnIZqp0Dc2-38E&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>These tiny tubs are here to save you from a lifetime of showers.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Smallest Bathtub Size In India Narrow Bathtubs For Small Spaces Small Bathtub Free Standing Bath Tub Tiny Bath" src="https://i.pinimg.com/564x/c3/aa/fb/c3aafbbb268f8510075391031ba9790f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm9Be0nkmLQw7aOOp4deHXUhVOjyWMD3h2sy04qUNTUWd3L_NsvB2vC-iPD7Dflv1V0MSh5DfdW8B8cxBYUybq65ePyJwMqGY&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Material is as important as the shape of a tub.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bathroom Pics Small Bathtub Sizes Small Bathtub Small Tub Small Soaker Tub" src="https://i.pinimg.com/originals/2d/a6/21/2da621ebb26910b92844b549319ff68e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnJCJKAQB0i5400M7eOA4l-fSnvI4UuI0xxXTxfXVuc7cDDjTBTRhep2f5QBau9KxHqecuO6Fs2QI1GH1_cNg28Z4CZl3osc&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>This corner configured bathtub is made even more impressive by its bright red hue.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Lullaby Nano Is Aquatica S Take On Creating A Small Deep Bathtub That Is Ideal For A Small And Small Bathtub Small Soaking Tub Bathroom Design Small Modern" src="https://i.pinimg.com/originals/4d/6c/29/4d6c29d900e2dbc184174baea20cdb13.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPG1Ht8otE3hISD6VrcAqJvvX1t8laer9bge8DKqs_GfJ5ZlGAu7Y_buLjN3gksmg4Ln_mDam4GJwuNLfnbFADhHQw6lS3Wus&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Made from solid oak for added style and strength this modern small bathtub is adorned with three iron wraps to provide additional durability and a charming rustic look.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The 8 Best Small Bathtubs Of 2020 Small Soaker Tub Deep Bathtub Soaker Tub" src="https://i.pinimg.com/originals/7f/26/85/7f26851353c61dc8e94d0a0cb9b3dcef.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQH-EwazF8mM5asIXIeihiQLs5qsVY2XJD_tXwrAykr7hUTyfUY6YXIBRH6Hl3iHmShSvif23MKUoGmyrpRzamRoqnwTgoHkk&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Although the tub is an ideal match for winter lodges and cabins the handsome design and chrome fixtures ensure it provides a classic look in any setting.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Kids Bathroom With Great Style Tiny House Bathroom House Bathroom Tiny Bathrooms" src="https://i.pinimg.com/originals/ba/df/ac/badfac75990d589564bfa871bc405d18.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXZqIt6BecNUsgjZLbM0xyCbKl55iFUe-0KY9DdMLDAKHO7qJLeU5l4kPf-KWim50ekjTFVNzb4Ax-Z107FNOV9xmBSvrHuBQ&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Woodbridge bta 1513 acrylic freestanding bathtub contemporary soaking tub with brushed nickel overflow and drain bta1513 white 67 b 0013 4 4 out of 5 stars 189 645 10 645.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Think You Don T Have Space For A Tub Try A Three Fourths Tub Small Bathroom Inspiration Bathroom Inspiration House Bathroom" src="https://i.pinimg.com/originals/5b/76/c9/5b76c9f0ba30d41df721723339c341a5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtvQxE-8TQqWTI5auNPPKUePsMuYScB9d6hBj3rUt8v0shq782GzlWXRsR_xhMzrMXXlrg_eJraBShfrXjD9NEYvOCEyFeQWs&amp;ec=45732304';" />
+        <small>Source: www.pinterest.com</small>
+        <p>This corner configured bathtub is made even more impressive by its bright red hue.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="34 Awesome Japanese Bathtub There Are Bathtubs Made For Smaller Bathrooms A Good Deal Of Folks Cons Japanese Soaking Tubs Small Soaking Tub Tub Shower Combo" src="https://i.pinimg.com/originals/d9/1e/87/d91e87fe73a5612860444c0811e26d73.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmW-PT_rbqJHRoBPxRnbgDwaT-39KWelbilI6xQZxsLtiIRI3rEoLs8PjylAi4jeJbvRyFDW5SfzdjBFv8PH4XQNEDF_xN6PQ&amp;ec=45732304';" />
+        <small>Source: id.pinterest.com</small>
+        <p>The upside to acrylic tubs is that they re easy to clean and also weigh considerably less than cast iron versions.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/plastic-bathtub.html"><i>&larr; plastic bathtub</i></a>
+                                                                    
+                                        <a href="/paint-fiberglass-bathtub.html"><i>paint fiberglass bathtub &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
